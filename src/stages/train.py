@@ -3,6 +3,11 @@ import joblib
 import pandas as pd
 from typing import Text
 import yaml
+import subprocess
+import os
+
+import sys
+sys.path.append('/home/bigpenguin/projects/dvc/')
 
 from src.train.train import train
 from src.utils.logs import get_logger
