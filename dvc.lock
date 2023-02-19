@@ -87,7 +87,7 @@ stages:
             logreg:
               param_grid:
                 C:
-                - 0.001
+                - 0.002
                 max_iter:
                 - 100
                 solver:
@@ -110,7 +110,7 @@ stages:
           model_path: models/model.joblib
     outs:
     - path: models/model.joblib
-      md5: 67a11eacda6742c02a1ffe9d693bb258
+      md5: 11f4a664c3807de96b834ba195eaecb4
       size: 2949
   evaluate:
     cmd: python src/stages/evaluate.py --config=params.yaml
