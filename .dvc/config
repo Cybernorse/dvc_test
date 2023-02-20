@@ -1,4 +1,2 @@
-[core]
-    remote = storage
 ['remote "myremote"']
     url = /tmp/dvc
