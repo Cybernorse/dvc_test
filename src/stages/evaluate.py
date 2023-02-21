@@ -41,6 +41,7 @@ def evaluate_model(config_path: Text) -> None:
     prediction = model.predict(X_test)
     f1 = f1_score(y_true=y_test, y_pred=prediction, average='macro')
     cm = confusion_matrix(prediction, y_test)
+    print(f1)
     report = {
         'f1': f1,
         'cm': cm,
