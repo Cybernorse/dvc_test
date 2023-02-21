@@ -2,8 +2,8 @@ import argparse
 import pandas as pd
 from typing import Text
 import yaml
-import sys
 
+import sys
 sys.path.append('/home/bigpenguin/projects/dvc/')
 
 from src.utils.logs import get_logger

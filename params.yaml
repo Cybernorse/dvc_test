@@ -1,3 +1,4 @@
+
 base:
   random_state: 42
   log_level: INFO
@@ -42,5 +43,3 @@ evaluate:
   reports_dir: reports
   metrics_file: 'metrics.json'
   confusion_matrix_image: 'confusion_matrix.png'
-
-

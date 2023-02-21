@@ -7,8 +7,8 @@ from sklearn.datasets import load_iris
 from sklearn.metrics import confusion_matrix, f1_score
 from typing import Text, Dict
 import yaml
-import sys
 
+import sys
 sys.path.append('/home/bigpenguin/projects/dvc/')
 
 from src.report.visualize import plot_confusion_matrix
@@ -41,7 +41,6 @@ def evaluate_model(config_path: Text) -> None:
     prediction = model.predict(X_test)
     f1 = f1_score(y_true=y_test, y_pred=prediction, average='macro')
     cm = confusion_matrix(prediction, y_test)
-    print(f1)
     report = {
         'f1': f1,
         'cm': cm,

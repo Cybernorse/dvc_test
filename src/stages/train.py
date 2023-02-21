@@ -3,8 +3,6 @@ import joblib
 import pandas as pd
 from typing import Text
 import yaml
-import subprocess
-import os
 
 import sys
 sys.path.append('/home/bigpenguin/projects/dvc/')
