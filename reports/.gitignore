@@ -1,3 +1,4 @@
 !.gitignore
 /confusion_matrix.png
 /metrics.json
+/confusion_matrix_data.csv
